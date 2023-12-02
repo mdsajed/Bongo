@@ -1,0 +1,43 @@
+{% extends 'Bong/base.html' %}
+{% load static  %}
+{% block title %}About{% endblock title %}
+
+
+{%block banner-slider %}
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'Bong/images/banner/01.jpg'%}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'Bong/images/banner/02.jpg'%}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item ">
+        <img src="{% static 'Bong/images/banner/03.jpg'%}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item ">
+        <img src="{% static 'Bong/images/banner/04.jpg'%}" class="d-block w-100" alt="banner image">
+      </div>
+    </div>
+  </div>
+   
+
+{%endblock banner-slider %}
+
+{% block main-content %}
+<div class="container mt-3">
+    <br>
+    <h2 class="text-center">About Us</h2>
+    <br>
+    <div class="row container">
+        <p class="fs-4 text-center">We take pride in sourcing only the finest products from trusted suppliers and brands. Quality and reliability are at the forefront of our commitment to you. Each item you find on our site has been chosen with your satisfaction in mind, ensuring that you receive products that meet or exceed your expectations.</p>
+    </div>
+    <br><br>
+   <h2 class="text-center">Mission</h2>
+   <br>
+   <div class="row container">
+    <p class="fs-4 text-center">We aim to foster a strong and supportive community of customers who share our passion for quality and convenience. Join our growing community, stay informed about the latest trends, and take advantage of exclusive offers.</p>
+   </div>
+</div>
+<br><br>
+{% endblock main-content %} 
